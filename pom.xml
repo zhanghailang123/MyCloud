@@ -10,6 +10,7 @@
   <modules>
     <module>Eureka</module>
     <module>EurekaClientA</module>
+      <module>RibbonZ</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -36,6 +37,13 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
+
     <!-- eureka 服务端 -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
