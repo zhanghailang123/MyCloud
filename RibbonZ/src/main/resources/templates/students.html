@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>products</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+
+        table {
+            border-collapse:collapse;
+            width:400px;
+            margin:20px auto;
+        }
+        td,th{
+            border:1px solid gray;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="workingArea">
+    <table>
+        <thead>
+        <tr>
+            <th>性别</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p: ${stus}">
+            <td th:text="${p.sex}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.age}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: RibbonZ
+  thymleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: HTML5
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

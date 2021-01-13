@@ -11,6 +11,7 @@
     <module>Eureka</module>
     <module>EurekaClientA</module>
       <module>RibbonZ</module>
+      <module>FeignZ</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -24,8 +25,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <hutool.version>5.3.5</hutool.version>
     <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
   </properties>

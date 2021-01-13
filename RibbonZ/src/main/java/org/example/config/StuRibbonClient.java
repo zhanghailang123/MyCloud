@@ -17,6 +17,6 @@ public class StuRibbonClient {
     @Autowired
     RestTemplate restTemplate;
     public List<Student> studentList(){
-        return restTemplate.getForObject("",List.class);
+        return restTemplate.getForObject("http://EurekaClientA/students",List.class);
     }
 }
