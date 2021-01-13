@@ -1,6 +1,8 @@
 spring:
   application:
     name: FeignZ
+  zipkin:
+    base-url: http://localhost:9411
   thymleaf:
     cache: false
     prefix: classpath:/templates/

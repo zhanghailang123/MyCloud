@@ -1,5 +1,6 @@
 package org.example;
 
+import brave.sampler.Sampler;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.net.NetUtil;
 import cn.hutool.core.thread.ThreadUtil;
@@ -68,4 +69,8 @@ public class FeignZApplication {
 //    RestTemplate restTemplate() {
 //        return new RestTemplate();
 //    }
+    @Bean
+    public Sampler getSampler(){
+        return Sampler.ALWAYS_SAMPLE;
+    }
 }

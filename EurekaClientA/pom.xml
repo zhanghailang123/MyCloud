@@ -23,6 +23,7 @@
   </properties>
 
   <dependencies>
+    <!--eureka注册中心-->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -30,6 +31,11 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!--zipkin链路追踪-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-zipkin</artifactId>
     </dependency>
     <dependency>
       <groupId>org.example</groupId>

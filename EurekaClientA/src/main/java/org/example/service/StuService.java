@@ -18,7 +18,7 @@ public class StuService {
     String port;
     public List<Student> studentList(){
         List<Student> ps = new ArrayList<>();
-        ps.add(new Student("zhangsan","ann + 端口号：" +port,"23","88"));
+        ps.add(new Student("张言","ann + 大沙北：" +port,"23","88"));
         ps.add(new Student("lisi","ann+ 端口号：" +port,"26","99"));
         ps.add(new Student("wangwu","ann+ 端口号：" +port,"29","100"));
         System.out.println("服务被调用！！！！！！！！！！！！！！");
