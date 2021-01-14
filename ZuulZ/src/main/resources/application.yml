@@ -1,0 +1,20 @@
+spring:
+  application.name: ZuulZ
+#turbine:
+#  aggregator:
+#    clusterConfig: default
+#  appConfig: FeignZ  ### 配置Eureka中的serviceId列表，表明监控哪些服务
+#  clusterNameExpression: new String("default")
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#网关路由映射
+zuul:
+  routes:
+    api-a:
+      path: /api-data/**
+      serviceId: EurekaClientA
+    api-b:
+      path: /api-view/**
+      serviceId: FeignZ
