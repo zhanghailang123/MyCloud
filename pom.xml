@@ -13,6 +13,7 @@
       <module>RibbonZ</module>
       <module>FeignZ</module>
       <module>HystrixDashboard</module>
+    <module>TurbineZ</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
