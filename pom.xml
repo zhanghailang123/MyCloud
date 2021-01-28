@@ -15,6 +15,7 @@
     <module>HystrixDashboard</module>
     <module>TurbineZ</module>
     <module>ZuulZ</module>
+      <module>NettyZ</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
