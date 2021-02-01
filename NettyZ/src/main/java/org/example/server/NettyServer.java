@@ -2,6 +2,7 @@ package org.example.server;
 
 import com.netflix.loadbalancer.AbstractLoadBalancer;
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -35,6 +36,11 @@ public class NettyServer {
         b.group(bossGroup,workerGroup)
                 .handler(new LoggingHandler(LogLevel.INFO))
                 .channel(NioServerSocketChannel.class);
+
     }
+    private void setOperation(ServerBootstrap serverBootstrap){
+        serverBootstrap.option(ChannelOption.SO_BACKLOG, 2000).option(ChannelOption.SO_SNDBUF, 128 * 1024).option(ChannelOption.SO_RCVBUF, 128 * 1024).option(ChannelOption.SO_KEEPALIVE, true).option(ChannelOption.TCP_NODELAY, true).option(ChannelOption.SO_REUSEADDR, true).childOption(ChannelOption.SO_KEEPALIVE, true);
+    }
+
 
 }
